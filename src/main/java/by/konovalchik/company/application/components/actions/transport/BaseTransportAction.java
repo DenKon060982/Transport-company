@@ -1,15 +1,14 @@
 package by.konovalchik.company.application.components.actions.transport;
 
 import by.konovalchik.company.application.utils.Input;
-import by.konovalchik.company.controllers.CompanyController;
-import by.konovalchik.company.controllers.CompanyControllerImp;
+import by.konovalchik.company.controllers.TransportsController;
+import by.konovalchik.company.controllers.TransportsControllerImp;
 import by.konovalchik.company.entity.transports.Transport;
 import by.konovalchik.company.entity.transports.TransportType;
-
 import static java.sql.Types.NULL;
 
 public abstract class BaseTransportAction {
-  protected CompanyController controller = new CompanyControllerImp();
+  protected TransportsController controller = new TransportsControllerImp();
 
     protected Transport createTransport(){
         String name = Input.getString("Введите название");
@@ -20,7 +19,5 @@ public abstract class BaseTransportAction {
         int id_type = Input.getInt("Введите id типа транспорта");
         String name_type = Input.getString("Введите название типа транспорта");
         return new Transport(NULL, name, speed,capacity,carrying, price, new TransportType(id_type, name_type));
-
     }
-
 }

@@ -1,4 +1,4 @@
-package by.konovalchik.company.dao;
+package by.konovalchik.company.dao.comparators;
 
 import by.konovalchik.company.entity.transports.Transport;
 

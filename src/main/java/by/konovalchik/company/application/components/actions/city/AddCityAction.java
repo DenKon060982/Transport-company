@@ -1,7 +1,6 @@
 package by.konovalchik.company.application.components.actions.city;
-
 import by.konovalchik.company.application.components.actions.Action;
-import by.konovalchik.company.entity.City;
+import by.konovalchik.company.entity.cities.City;
 import by.konovalchik.company.exceptions.DuplicateCityException;
 
 

@@ -1,5 +1,4 @@
 package by.konovalchik.company.entity.logXML;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;

@@ -1,5 +1,4 @@
 package by.konovalchik.company.entity.logXML;
-
 import javax.xml.bind.annotation.XmlAttribute;
 import java.io.Serializable;
 
