@@ -7,7 +7,6 @@ public class DuplicateCityException extends Exception{
         this.id = id;
     }
 
-
     @Override
     public String getMessage() {
         return String.format("Город с id = %d уже существует", id);

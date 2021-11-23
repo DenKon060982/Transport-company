@@ -99,12 +99,12 @@ public class Transport {
 
     @Override
     public String toString() {
-        return  " | id=" + id +
-                " | name=" + name +
-                " | speed=" + speed +
-                " | capacity=" + capacity +
-                " | carrying=" + carrying +
-                " | price=" + price +
+        return  " | id = " + id +
+                " | name = " + name +
+                " | speed = " + speed +
+                " | capacity = " + capacity +
+                " | carrying = " + carrying +
+                " | price = " + price +
                 " | transportType: " + transportType;
     }
 }

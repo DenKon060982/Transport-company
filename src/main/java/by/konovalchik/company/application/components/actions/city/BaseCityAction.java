@@ -1,14 +1,12 @@
 package by.konovalchik.company.application.components.actions.city;
-
 import by.konovalchik.company.application.utils.Input;
-import by.konovalchik.company.controllers.CompanyController;
-import by.konovalchik.company.controllers.CompanyControllerImp;
-import by.konovalchik.company.entity.City;
-
+import by.konovalchik.company.controllers.CitiesController;
+import by.konovalchik.company.controllers.CitiesControllerImp;
+import by.konovalchik.company.entity.cities.City;
 import static java.sql.Types.NULL;
 
 public abstract class BaseCityAction {
-  protected CompanyController controller = new CompanyControllerImp();
+  protected CitiesController controller = new CitiesControllerImp();
 
     protected City createCity(){
         String name = Input.getString("Введите название города");

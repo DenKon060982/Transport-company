@@ -20,23 +20,23 @@ public class Converter implements Runnable {
       LogsController controller = new LogsControllerImp();
       LogWrapper logWrapper = new LogWrapper(controller.getLogs());
 
-        try {
+        try{
             JAXBContext context = JAXBContext.newInstance(LogWrapper.class, Log.class);
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(logWrapper, new File("transports_log.xml"));
-        } catch (JAXBException e) {
+        } catch(JAXBException e) {
             e.printStackTrace();
         }
   }
 
   public static void toSQL(String text){
-      try (Connection connection = MysqlConnection.getConnection()){
+      try(Connection connection = MysqlConnection.getConnection()){
           String sql = "INSERT INTO transports_logs VALUES (NULL, ?)";
           PreparedStatement statement = connection.prepareStatement(sql);
           statement.setString(1, text);
           statement.execute();
-      } catch (SQLException e) {
+      } catch(SQLException e) {
           e.printStackTrace();
       }
   }
@@ -44,7 +44,6 @@ public class Converter implements Runnable {
   public static void clear(){
       LogsController controller = new LogsControllerImp();
       controller.clearLogs();
-
   }
 
     @Override

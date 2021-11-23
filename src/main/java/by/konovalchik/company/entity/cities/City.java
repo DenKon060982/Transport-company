@@ -1,5 +1,4 @@
-package by.konovalchik.company.entity;
-
+package by.konovalchik.company.entity.cities;
 import java.util.Objects;
 
 public class City {
@@ -18,7 +17,6 @@ public class City {
         this.airport = airport;
         this.seaport = seaport;
     }
-
 
     public City (){}
 
@@ -89,13 +87,12 @@ public class City {
 
     @Override
     public String toString() {
-        return  "| id=" + id +
-                " | name=" + name +
-                " | latitude=" + latitude +
-                " | longitude=" + longitude +
-                " | airport=" + airport +
-                " | seaport=" + seaport;
+        return  "| id = " + id +
+                " | name = " + name +
+                " | latitude = " + latitude +
+                " | longitude = " + longitude +
+                " | airport = " + airport +
+                " | seaport = " + seaport;
     }
-
 
 }

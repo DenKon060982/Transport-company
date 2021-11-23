@@ -2,7 +2,7 @@ package by.konovalchik.company.application.components.actions.city;
 
 import by.konovalchik.company.application.components.actions.Action;
 import by.konovalchik.company.application.utils.Input;
-import by.konovalchik.company.entity.City;
+import by.konovalchik.company.entity.cities.City;
 
 public class UpdateCityAction extends BaseCityAction implements Action {
 

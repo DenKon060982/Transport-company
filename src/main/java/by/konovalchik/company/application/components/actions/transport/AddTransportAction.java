@@ -1,5 +1,4 @@
 package by.konovalchik.company.application.components.actions.transport;
-
 import by.konovalchik.company.application.components.actions.Action;
 import by.konovalchik.company.entity.transports.Transport;
 import by.konovalchik.company.exceptions.DuplicateTransportException;

@@ -1,5 +1,4 @@
 package by.konovalchik.company.application.components;
-
 import by.konovalchik.company.application.components.actions.Action;
 
 public class Button {
@@ -10,6 +9,7 @@ public class Button {
         this.name = name;
         this.action = action;
     }
+
 
     Button(){};
 
